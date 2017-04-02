@@ -1,0 +1,10 @@
+export const ADD_LINK = 'ADD_LINK';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const ADD_VOTE = 'ADD_VOTE';
+export const LOGIN = 'USER_LOGIN';
+export const FETCH_LINKS = 'FETCH_LINKS';
+export const FETCH_COMMENTS = 'FETCH_COMMENTS';
+export const LINKS_LOADED = 'LINKS_LOADED';
+export const COMMENTS_LOADED = 'COMMENTS_LOADED';
+export const UPDATE_COMMENTS_REF = 'UPDATE_COMMENTS_REF'; 
+export const TOGGLE_ADD_COMMENT_MODAL = 'TOGGLE_ADD_COMMENT_MODAL';
