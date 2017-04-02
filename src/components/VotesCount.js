@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { PropTypes } from 'react'
 import FontAwesome from 'react-fontawesome';
 import styled from 'styled-components';
 

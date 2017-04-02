@@ -4,14 +4,11 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk';
 import { browserHistory } from 'react-router';
-import { syncHistoryWithStore, routerReducer, routerMiddleware, routerActions } from 'react-router-redux'
-
+import { syncHistoryWithStore, routerReducer, routerMiddleware } from 'react-router-redux'
 import reducer from './reducers'
 import userMiddleWare from './middleware/user';
 import App from './App';
-import LoginContainer from './containers/LoginContainer';
-import CreateLinkContainer from './containers/CreateLinkContainer';
-import fontAwesome from 'font-awesome/css/font-awesome.css';
+import 'font-awesome/css/font-awesome.css';
 const routingMiddleware = routerMiddleware(browserHistory)
 const middleware = [ userMiddleWare, thunk, routingMiddleware ];
 const store = createStore(

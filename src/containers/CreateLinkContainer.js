@@ -5,7 +5,6 @@ import CreateLinkForm from '../components/CreateLinkForm';
 import {  addLink } from '../actions/links';
 
 function CreateLinkContainer({ onSave, onCancel }) {
-    let inputRef;
     return (<CreateLinkForm onSave={onSave} onCancel={onCancel} />);
 }
 

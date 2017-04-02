@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react'
+import React, {PropTypes} from 'react'
 import Modal from 'react-modal';
 import Title from './base/Title';
 import Button from './base/Button';

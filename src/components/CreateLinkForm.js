@@ -1,14 +1,12 @@
-import React, {Component, PropTypes} from 'react'
-import Modal from 'react-modal';
+import React, {Component} from 'react'
 import Title from './base/Title';
 import Button from './base/Button';
 
 export default class CreateLinkForm extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            formInputs: {}
-        };
+        this.state = {};
+        this.formInputs  = {};
         this.onSubmit = this
             .onSubmit
             .bind(this);
@@ -25,13 +23,13 @@ export default class CreateLinkForm extends Component {
     }
 
     isFormValid() {
-        const inputs = this.state.formInputs;
+        const inputs = this.formInputs;
         const invalidElements = Object.keys(inputs).filter(key => !inputs[key].value);
         return !invalidElements.length;
     }
 
     getFormValues() {
-        const inputs = this.state.formInputs;
+        const inputs = this.formInputs;
         return Object.keys(inputs).reduce((values, key) => {
             values[key] = inputs[key].value;
             return values;
@@ -50,19 +48,19 @@ export default class CreateLinkForm extends Component {
                             <label htmlFor="clinkTitle">Title</label>
                         </div>
                         <div>
-                            <input type="text" id="clinkTitle" ref={ elm => this.state.formInputs.title = elm }/>
+                            <input type="text" id="clinkTitle" ref={ elm => this.formInputs.title = elm }/>
                         </div>
                         <div>
                             <label htmlFor="clinkUrl">Url</label>
                         </div>
                         <div>
-                            <input type="text" id="clinkUrl" ref={ elm => this.state.formInputs.url = elm }/>
+                            <input type="text" id="clinkUrl" ref={ elm => this.formInputs.url = elm }/>
                         </div>
                         <div>
                             <label htmlFor="clinkImg">Image Url:</label>
                         </div>
                         <div>
-                            <input type="text" id="clinkImg" ref={ elm => this.state.formInputs.img = elm }/>
+                            <input type="text" id="clinkImg" ref={ elm => this.formInputs.img = elm }/>
                         </div>
                     </fieldset>
                     <Button type="submit">Save</Button>

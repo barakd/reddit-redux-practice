@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import styled from 'styled-components';
 import Title from './base/Title';
 import SubmissionInfo from './base/SubmissionInfo';
 import Thumbnail from './base/Thumbnail';

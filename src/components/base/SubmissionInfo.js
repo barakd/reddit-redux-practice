@@ -14,9 +14,9 @@ const StyledSmall = styled.small`
 export default function SubmissionInfo(props) {
     const { author, time } = props;
     return (
-        <styledSmall>Submitted on {timeToReadableString(time)} by 
+        <StyledSmall>Submitted on {timeToReadableString(time)} by 
          <NameSpan>{author}</NameSpan>
-    </styledSmall>)
+    </StyledSmall>)
 }
 
 function timeToReadableString(time) {

@@ -4,7 +4,6 @@ import AddCommentModal from '../components/AddCommentModal';
 import { toggleAddCommentModal, addComment } from '../actions/comments';
 
 function AddCommentContainer({ currentReply, onSave, closeModal }) {
-    let inputRef;
     return <AddCommentModal currentReply={currentReply} onSave={onSave} closeModal={closeModal} />
 }
 
